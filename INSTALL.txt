@@ -1,0 +1,28 @@
+TB Drum Machine (2026 MAC) - stand-alone drum machine app
+Universal (Apple Silicon + Intel), macOS 11 Big Sur and later.
+
+1. INSTALL
+   Drag "TB Drum Machine.app" into your Applications folder.
+
+2. LET macOS OPEN IT
+   The app is signed on your Mac only (there's no Apple Developer account), so
+   macOS blocks it until you clear the download tag. Open Terminal and run these
+   one line at a time:
+
+   cd /Applications
+   ls | grep -i drum
+   sudo xattr -cr "TB Drum Machine.app"
+   sudo codesign --force --deep --sign - "TB Drum Machine.app"
+
+   (The ls line just shows the app is there. Type your Mac password when asked;
+   nothing shows while you type.)
+
+   Then open it from Applications as normal.
+
+3. KITS
+   In the app: Kits > Show Kits Folder. It opens
+   ~/Library/Application Support/TB/TB Drum Machine/Kits
+   Drag the TB 707, TB CR78 and TB LM1 sample folders in, then Kits > Reload Kits.
+   The readout shows 707 23/23, CR-78 7/7, LM-1 11/11.
+
+The window scales: drag its corner. Everything else is in the README on GitHub.
