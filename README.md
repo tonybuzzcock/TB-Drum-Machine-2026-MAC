@@ -19,8 +19,8 @@ frame, TB electronic logo). For personal use. This is the same app as `TB-Drum-M
    sudo xattr -cr "TB Drum Machine.app"
    sudo codesign --force --deep --sign - "TB Drum Machine.app"
    ```
-4. **Kits ▸ Show Kits Folder**, drag in **TB 707**, **TB CR78** and **TB LM1**, then **Kits ▸ Reload Kits**
-   (707 23, CR-78 7, LM-1 11 samples).
+4. **Kits ▸ Show Kits Folder**, drag in **TB 707**, **TB CR78**, **TB LM1**, **TB 8 Bit** and **TB TVOD Kit**, then **Kits ▸ Reload Kits**
+   (707 23, CR-78 7, LM-1 11, 8 BIT 11, TVOD 7 samples).
 
 The samples aren't in this public repo; the app reads them from the Kits folder.
 
@@ -39,6 +39,17 @@ The samples aren't in this public repo; the app reads them from the Kits folder.
 | Hi-Hat | Closed / Open | Closed / Open | Closed / Open |
 | Crash | Crash | – | Crash |
 | Ride | Ride | – | Ride |
+
+Two more kits, from the user's own samples:
+
+- **8 BIT** (folder **TB 8 Bit**): Kick = KICK / ELECTRO, Snare = ELECTRO SNARE, Hi-Hat = COIN, then
+  BLIP, WONKY, ALARMING, SPACE HIT on the toms, WHIPLASH (Crash), NAG REPEAT (Ride) and
+  DISCHORDANT (Clap/Tamb).
+- **TVOD** (folder **TB TVOD Kit**): every sound on its own pad, in the order KICK, SNARE, INTENDO,
+  WHITE NOISE 1, WHITE NOISE 2, WHITE NOISE 3 (the long one), WHIPLASH.
+
+Pads a kit doesn't have always go last. Kits are chosen per pattern from the **KIT** drop-down (◀ ▶
+step through them; click the name for the menu).
 
 The two sounds on a pad share one voice, as on the 707, so the closed hat chokes the open hat.
 Pad names come from the loaded kit. A kit can be chosen for each pattern.
@@ -65,7 +76,7 @@ Pad names come from the loaded kit. A kit can be chosen for each pattern.
   and **PLAY FROM HERE** to start partway through.
 
 Top bar: PLAY/STOP (space bar), REC (R key), TEMPO 30–300 BPM, SWING (50–75%, delays the
-odd 16ths), ACCENT amount, MASTER, SYNC **INT / MIDI**, and KIT.
+odd 16ths), ACCENT amount, MASTER, SYNC **INT / MIDI**, and the KIT drop-down.
 
 The strip holds the 16 **pattern** keys: lime = the pattern playing, charcoal = has steps,
 blinking = next. Picking a pattern while playing waits for the end of the bar, like the 707.
